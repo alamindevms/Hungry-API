@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Hungry-API</title>
+    <!-- Bootstrap-CSS -->
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css" />
+    <!-- FontAwesome-CSS -->
+    <link rel="stylesheet" href="assets/css/all.min.css" />
+    <!-- Google-Fonts-CSS -->
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Oswald:wght@300;500&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Custom-CSS -->
+    <link rel="stylesheet" href="assets/css/style.css" />
+  </head>
+  <body>
+    <header>
+      <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container">
+          <a class="navbar-brand" href="#">Hungry Monstar</a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#headerNav"
+            aria-controls="headerNav"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="headerNav">
+            <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+              <li class="nav-item ms-4">
+                <a class="nav-link active" aria-current="page" href="#">Home</a>
+              </li>
+              <li class="nav-item ms-4">
+                <a class="nav-link" href="#">Blog</a>
+              </li>
+              <li class="nav-item ms-4">
+                <a class="nav-link" href="#">About Us</a>
+              </li>
+              <li class="nav-item ms-4">
+                <a class="nav-link" href="#">Contact Us</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <!-- ./container -->
+      </nav>
+      <!-- ./nav -->
+    </header>
+    <!-- ./header -->
+    <main>
+      <div class="search-box">
+        <div class="container">
+          <div class="row justify-content-center py-5  ">
+            <div class="col-md-6">
+              <div class="d-flex align-items-start">
+                <div class="d-block w-100 me-2">
+                  <input id="search-input" type="text" class="form-control" placeholder="Type..."/>
+                  <div class="invalid-feedback">
+                    Please type anything...
+                  </div>
+                </div>
+                <button id="search-btn" class="btn btn-info px-3">Search</button>
+              </div>
+            </div>
+          </div>
+          <div class="row" id="card">
+          </div>
+        </div>
+      </div>
+    </main>
+    <!-- ./main -->
+    <!-- Bootstrap-JS -->
+    <script src="assets/js/bootstrap.bundle.js"></script>
+    <!-- FontAwesome-JS -->
+    <script src="assets/js/all.min.js"></script>
+	<script src="assets/js/custom.js"></script>
+  </body>
+</html>
